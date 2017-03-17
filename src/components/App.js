@@ -42,9 +42,7 @@ class App extends React.Component {
     }
 
     toggleSend(index) {
-
         var users = [...this.state.users];
-
         if(users[index].send === true) {
             users[index].send = false
         } else if (users[index].send === false) {
@@ -56,13 +54,11 @@ class App extends React.Component {
     }
 
     addEmail(newEmail) {
-
         var email = [...this.state.email];
         email.push(newEmail);
         this.setState({
             email: email
-        }, function(){console.log(this.state.email)})
-
+        }, function(){console.log(this.state.email)}) //I left this console.log in for ease of seeing the email object on click
     }
 
     render() {

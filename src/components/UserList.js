@@ -11,7 +11,6 @@ class UserList extends React.Component {
                 <td>{details.firstName} {details.lastName} </td>
                 <td>{details.office} </td>
                 <td>{details.isActive? 'Active' : 'Inactive'}</td>
-
             </tr>
         )
     }

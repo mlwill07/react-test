@@ -2,7 +2,6 @@ import React from 'react';
 import UserList from './UserList'
 import EmailTemp from './EmailTemp';
 
-
 class UserTable extends React.Component {
     constructor() {
         super();
@@ -12,10 +11,10 @@ class UserTable extends React.Component {
             showEmail: false
         }
     }
+
     renderEmailForm(event) {
         event.preventDefault();
         var email = {...this.state}
-
         if(this.state.showEmail) {
             this.setState({
                 showEmail: false
@@ -37,8 +36,6 @@ class UserTable extends React.Component {
             email.sendTo.push(userEmail)
         }
         this.props.addEmail(email)
-
-
     }
 
     render() {

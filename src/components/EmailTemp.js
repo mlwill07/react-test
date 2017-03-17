@@ -21,8 +21,7 @@ class EmailForm extends React.Component {
         return (
             <form ref={(input) => this.form = input} className="email">
                 <input ref={(input) => this.emailSubject = input} type="text" placeholder="Subject"/>
-                <textarea  ref={(input) => this.emailBody = input} cols="50" rows="10" placeholder="Email Text">
-
+                <textarea  ref={(input) => this.emailBody = input} rows="10" placeholder="Email Text">
                 </textarea>
                 <button onClick={(e) => this.sendEmail(e)}>Send Email</button>
             </form>
