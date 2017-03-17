@@ -1,0 +1,75 @@
+* {
+    font-family: sans-serif;
+}
+
+td, th {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+td {
+    text-align: left;
+}
+
+select {
+    border-color: transparent;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email>input, .email>textarea{
+    display: block;
+    margin: 30px auto;
+    width: 40%;
+    border-radius: 2px;
+    border: 1px solid #b8bab8;
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+
+}
+
+.header {
+    background-color: rgb(200, 0, 3);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    line-height: .5em;
+    padding: 5px 5px;
+    border-bottom: 20px solid white;
+}
+
+.table-content {
+    text-align: center;
+}
+
+.table-content table {
+    margin: auto;
+}
+
+ button {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    font-size: .85em;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    border: 1px solid #b8bab8;
+}
+
+ button:focus {
+    outline: none;
+}
+ button:active {
+    background-color: rgb(200, 0, 3);
+
+}
+
+.table-content form {
+    margin: auto
+}
