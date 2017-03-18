@@ -73,3 +73,11 @@ button {
 .table-content form {
     margin: auto
 }
+
+.sort {
+    cursor: s-resize;
+}
+
+.sort:hover {
+    text-decoration: underline;
+}

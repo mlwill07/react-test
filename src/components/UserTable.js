@@ -44,14 +44,14 @@ class UserTable extends React.Component {
             <table>
                 <thead>
                 <tr>
-                    <th>Email</th>
-                    <th onClick={() => this.props.sortUsers("lastName")}>User</th>
-                    <th onClick={() => this.props.sortUsers("office")}>Office</th>
+                    <th>Select</th>
+                    <th className="sort" onClick={() => this.props.sortUsers("lastName")}>User</th>
+                    <th className="sort" onClick={() => this.props.sortUsers("office")}>Office</th>
                     <th >
                         <select ref={(input) => this.input = input} onChange={() => this.props.filterUsers(this.input.value)}>
-                            <option value="all" default>All</option>
-                            <option  value="active">Active</option>
-                            <option value="inactive">InActive</option>
+                            <option  value="all" default>All</option>
+                            <option   value="active">Active</option>
+                            <option  value="inactive">InActive</option>
                         </select>
                     </th>
                 </tr>
